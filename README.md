@@ -12,6 +12,7 @@ $ SHELL=/bin/bash pipenv shell
 (venv)$ R 
 > renv::init()
 > renv::snapshot()
+$ ./waf configure --boost-includes=/usr/local/include --boost-libs=/usr/lib/x86_64-linux-gnu/
 ```
 
 Prerequisites
