@@ -1,3 +1,19 @@
+## Run
+
+Using dockerized ndnSIM by fam4r.
+
+Newer version using Pipenv.
+
+```bash
+$ pipenv --two
+$ pipenv install
+$ SHELL=/bin/bash pipenv shell
+(venv)$ ./run.py
+(venv)$ R 
+> renv::init()
+> renv::snapshot()
+```
+
 Prerequisites
 =============
 
