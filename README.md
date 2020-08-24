@@ -5,14 +5,13 @@ Using dockerized ndnSIM by fam4r.
 Newer version using Pipenv.
 
 ```bash
+$ UID=$(id -u) GID=$(id -g) docker-compose --rm ndnsim_ddos_cawka
 $ pipenv --two
 $ pipenv install
+$ R -e 'renv::restore()'
+$ ./waf configure --boost-includes=/usr/local/include --boost-libs=/usr/lib/x86_64-linux-gnu/
 $ SHELL=/bin/bash pipenv shell
 (venv)$ ./run.py
-(venv)$ R 
-> renv::init()
-> renv::snapshot()
-$ ./waf configure --boost-includes=/usr/local/include --boost-libs=/usr/lib/x86_64-linux-gnu/
 ```
 
 Prerequisites
