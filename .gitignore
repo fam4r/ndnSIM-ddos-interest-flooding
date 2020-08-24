@@ -3,6 +3,8 @@
 .lock*
 build/
 
+renv_modules/
+
 
 # Created by https://www.toptal.com/developers/gitignore/api/r,waf,windows,macos,linux,vim,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=r,waf,windows,macos,linux,vim,python
