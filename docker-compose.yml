@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  ndnsim:
+    image: emrevoid/ndnsim:2.8-debug
+    volumes:
+      - .:/home/ndn/simulation-cawka
+      - /tmp/.X11-unix/:/tmp/.X11-unix/
+    environment:
+      - DISPLAY=${DISPLAY}
+      - XAUTHORITY=${XAUTHORITY}
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    user: "${UID}:${GID}"
+    cap_drop:
+      - ALL
+    ipc: host
+    security_opt:
+      - no-new-privileges
+    # entrypoint: /home/ndn/ndnSIM/ns-3/waf --run=bench-simulator --vis
+
+volumes:
+  simulation:
